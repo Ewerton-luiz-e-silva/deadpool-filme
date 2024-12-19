@@ -1,0 +1,47 @@
+@use "variables" as *; // O `as *` permite usar as variáveis sem prefixo
+
+.footer {
+    background-color: $secondary-color;  // Cor de fundo usando variável
+    color: #fff;  // Cor do texto
+    padding: 1rem 0;
+    text-align: center;
+
+    p {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    a {
+        color: #fff;  // Cor do link usando variável
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $asentente-color-02;  // Cor de destaque ao passar o mouse
+        }
+    }
+
+    h5 {
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    .fab {
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #ff4b5c;  // Cor de destaque para os ícones
+        }
+    }
+
+    hr {
+        border-color: #444;
+    }
+
+    // Estilos para o fundo escuro
+    background-color: #222;  // Isso sobrepõe a cor de fundo anterior
+    color: #bbb;  // Sobrepõe a cor do texto
+}
+

@@ -1,0 +1,18 @@
+@use 'sass:color';  // Importa o módulo de cores
+
+$primary-color: #ff4d4d;
+$secondary-color: #1a1a1a;
+$background-color: #34495e;
+$text-color: #333;
+$font-family: 'Arial, sans-serif';
+
+$header-background: #1a1a1a;
+$header-text-color: #ffffff;
+$background-color: #f4f4f4;
+$primary-color: #ff4b5c;
+$text-color: #333333;
+
+// Usando color.adjust para ajustar a luminosidade
+$asentente-color: color.adjust(#ff4b5c, $lightness: 10%);
+$asentente-color-02: color.adjust(#ff4b5c, $lightness: 20%);
+$escruro-color: color.adjust($text-color, $lightness: -30%);
